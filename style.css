@@ -40,3 +40,8 @@ nav ul li {
     list-style: none;
     margin: 10px 20px;
 }
+nav ul li{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
