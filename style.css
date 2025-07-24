@@ -78,9 +78,33 @@ nav ul li a:hover::after {
     color: azure;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 .row{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     /*align-items: center;*/
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.about-col-2  {
+    flex-basis: 60%;
+}
+
+.sub_title {
+    font-size: 60px;
+    font-weight: 600;
 }
