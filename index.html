@@ -48,15 +48,46 @@ Beyond academics, I’m actively building real-world projects and preparing for 
 
 Let’s connect if you're looking for someone who’s analytical, creative, and always eager to learn.
           </p>
-    <div class="tab-titles">
-          <p class="tab-links active-link">Skills</p>
-          <p class="tab-links">Experience</p>
-          <p class="tab-links">Education</p>        
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick= "opentab('skills')">Skills</p>
+          <p class="tab-links" onclick= "opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>        
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Statistician</span><br>Analyzes and interprets data using statistical techniques.</li>
+            <li><span>Data Scientist</span><br>Combines Statistics, programming and domain knowledge to analyze complex data and build models.</li>
+            <li><span>Web App Developer</span><br>Builds the functionality of websites using frameworks like django & flask.</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2024 - present</span>Team Lead at Data Driven solutions</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2022 - 2026</span><br>The Co-operative University of Kenya</li>
+            <li><span>2022 - 2026</span><br>The Co-operative University of Kenya</li>
+            <li><span>2026 - current</span><br>MIT Opencourseware</li>
+          </ul>
+        </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
+<script>
+  var tablinks = document.getElementsByClassName('tab-links');
+  var tabcontents = document.getElementsByClassName('tab-contents');
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+     for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+  }
+</script>
 </body>
 </html>
